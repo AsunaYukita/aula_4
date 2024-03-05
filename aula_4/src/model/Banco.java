@@ -1,21 +1,31 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.UUID;
+
 public class Banco {
 private String nome_banco;
 private String certificado_autorizacao;
- public String getNomeBanco() {
-	return nome_banco;
- }
-public String getCertificadoAutorizacao() {
-	return certificado_autorizacao;
-	}
+private ArrayList<Usuario>usuarios; 
 
-public void setNomeBanco( String nome) {
+public Banco(String nome ) {
 	this.nome_banco = nome;
-	
-}
-public void setCertificadoAutorizacao ( String Certificado) {
-	this.certificado_autorizacao = Certificado; 
+	this.certificado_autorizacao 
+	= UUID.randomUUID().toString();
 }
 
+
+public String CriarUsuario(
+		String Nome, String CPF, 
+		String Celular, String Senha, String Email) 	{
+		Usuario usuarioNovo = new Usuario(Nome, CPF, Email, Celular, Senha);
+	usuarios.add(usuarioNovo);
+	return "Usuario cadastrado";
+	}
+public String getBanco() {
+	return (
+	"\nNome do banco: " + this.nome_banco
+	+"\nCertificado: " + this.certificado_autorizacao		
+			);
+		}
 }	

@@ -3,7 +3,7 @@ package model;
 public class Usuario {
  private String Nome, Celular,CPF, Email, Senha;
  private boolean EstaLogado = false;	
-Usuario (String Nome, String Celular, String Email, String Senha )	{
+public Usuario (String Nome, String Celular, String Email, String Senha, String CPF )	{
 	this.Nome = Nome;
 	this.CPF = CPF;
 	this.Celular = Celular;		
