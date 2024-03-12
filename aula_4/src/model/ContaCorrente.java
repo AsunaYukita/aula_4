@@ -2,7 +2,7 @@ package model;
 
 public class ContaCorrente extends Conta {
 	private double Valortaxa;
-	ContaCorrente(String email) {
+	public ContaCorrente(String email) {
 		super(email);
 		this.Valortaxa = Valortaxa;
 		

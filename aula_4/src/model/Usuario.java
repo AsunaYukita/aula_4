@@ -26,7 +26,7 @@ public String getUsuario () {
 	+"\nSenha" + this.Senha 
 	+"\nEstaLogado" + this.EstaLogado 
 			);
-}
+		}
 
 
 

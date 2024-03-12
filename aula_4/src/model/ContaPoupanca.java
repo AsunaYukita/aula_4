@@ -1,8 +1,8 @@
 package model;
 
-public class ContaPolpanca extends Conta{
+public class ContaPoupanca extends Conta{
 	private double rendimento;
-	ContaPolpanca (String email) {
+	public ContaPoupanca (String email) {
 		super (email);
 		this.rendimento = rendimento;
 		
